@@ -33,5 +33,9 @@ images.forEach(element => {
     imgEl.src = element.url;
     imgEl.alt = element.alt;
 
-    list.append(liEl, imgEl);
+    liEl.classList.add('gallery_item');
+    imgEl.classList.add('gallery_image');
+
+    liEl.appendChild(imgEl);
+    list.appendChild(liEl);
 })

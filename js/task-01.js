@@ -1,7 +1,6 @@
 const categoriesList = document.querySelector('#categories');
 const categoriesItems = categoriesList.querySelectorAll('.item');
 
-
 let headingsArray = [];
 let nestedListsArray = [];
 
