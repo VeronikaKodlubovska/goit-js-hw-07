@@ -2,7 +2,6 @@ const widgetEl = document.querySelector(".widget")
 const colorEl = widgetEl.querySelector(".color")
 const buttonEl = widgetEl.querySelector(".change-color")
 
-
 buttonEl.addEventListener("click", getRandomHexColor)
 
 function getRandomHexColor(event) {
