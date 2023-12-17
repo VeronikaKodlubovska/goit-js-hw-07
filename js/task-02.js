@@ -26,7 +26,7 @@ const images = [{
 
 const list = document.querySelector('.gallery');
 
-images.forEach(element => {
+const imagesGallery = images.map((element) => {
     let liEl = document.createElement('li');
     let imgEl = document.createElement('img');
 
@@ -37,5 +37,8 @@ images.forEach(element => {
     imgEl.classList.add('gallery_image');
 
     liEl.appendChild(imgEl);
-    list.appendChild(liEl);
+
+    return liEl
 })
+
+list.append(...imagesGallery);

@@ -3,7 +3,7 @@ const greetings = document.querySelector('h1')
 const name = greetings.querySelector('span')
 const initialName = name.textContent
 
-form.addEventListener('change', setOtherName)
+form.addEventListener('input', setOtherName)
 
 function setOtherName(event) {
     event.preventDefault();

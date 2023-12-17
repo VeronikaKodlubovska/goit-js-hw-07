@@ -10,7 +10,4 @@ function getRandomHexColor(event) {
     .toString(16)
       .padStart(6, 0)}`;
     document.body.style.backgroundColor = randomColor;
-
-    colorEl.textContent = randomColor;
-    colorEl.style.color = randomColor;
 }
